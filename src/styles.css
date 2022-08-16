@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3da2d6;
+  padding: 50px 0;
+  background-image: url('https://ichef.bbci.co.uk/images/ic/1920x1080/p05lqc4f.jpg');
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 50vh;
+  max-width: 100vw;
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.soc-logo {
+  width: 100px;
+}
+
+.titles {
+  text-align: center;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.titles > h3 {
+  font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.titles > .bg-clip {
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4E22AQHl1Jz8whUJcw/feedshare-shrink_1280/0/1660641339055?e=1663804800&v=beta&t=oftDDn0uA3A3KYzn_AUcRfEpuGBvxQp_G7FUww1Qqh8');
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  background-size: 100px;
+  font-size: 4.1rem;
+}
+
+.titles > .demo-day {
+  font-size: 6.25rem;
+  color: #30a4dd;
+  margin-top: -20px;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.details > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #30a4dd;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.register {
+  margin-top: 20px;
+}
+
+/* buttons */
+.buttons {
+  align-self: left;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+  border-radius: 20px;
+}
+
+.buttons #yes {
+  background-color: mediumseagreen;
+}
+
+.buttons #shifty {
+  position: absolute;
+  background-color: firebrick;
+}
+
+@media (max-width: 740px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+}
